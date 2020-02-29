@@ -113,3 +113,105 @@ Example:
 This feature will consist of the same task and result, however, the implementation will be done in two seperate ways, one using bash bult in operations, and the other using a python file. The 
 * The user will first be prompted to enter the method in which they would like the command done, entering `bash` for bash, and `python` for python 
 * The user will be prompted to input a basic arithmetic operator, (+,-,*,/, etc.), along with two numbers. The program will then return the result of the operation, as well as storing the operation with the result in an accompanying log file.
+
+## Feature 5 - COMMENT Feature (Custom #1)
+
+### Description
+This feature will consist of two tasks, and prompt the user for whichever of the two tasks they would like to complete. The user will be prompted for either `remove` or `identify`
+* If `remove` is chosen, prompt the user for a file and remove all the comments from the file and place them in an accompanying log comment file.
+* If `identify` is chosen, identify all the files in your repo that do not have comments and put them in a log file for reference.
+
+**Note: An important assumption will be that the comments will be the only thing in that line**
+
+Example:
+`Code` #This is not a comment
+
+#This is a comment
+`Code`
+
+For its first part, this feature uses grep to identify lines without comments and creates a file withoutas well as a file with$
+identifies, using grep, all the files that do not contain comments and prints them out for the user to see.
+
+### Execution
+
+This feature can be executed by entering `4` when prompted to do so. The command list will also
+remind you of this.
+
+## Feature 6 - Calculator Feature (Custom #2)
+
+### Description
+This feature will consist of the same task and result, however, the implementation will be done in two seperate ways, one using bash built-in operations, and the other using a python file. 
+* The user will first be prompted to enter the method in which they would like the command done, entering `bash` for bash, and `python` for python 
+* The user will be prompted to input a basic arithmetic operator, (+,-,*,/, etc.), along with two numbers. The program will then return the result of the operation, as well as storing the operation with the result in an accompanying log file.
+
+For the first part, the inputs are taken and cast to the built in built in basic calculator in bash. For the second part, a python file is created simply to cast the operation and the output is received after
+the python file is run.
+
+### Execution
+
+This feature can be executed by entering `5` when prompted to do so. The command list will also
+remind you of this.
+
+### References
+[How to use the basic calculator in bash](https://www.tutorialsandyou.com/bash-shell-scripting/bash-bc-18.html)
+[Checking whether an item is in an array](https://unix.stackexchange.com/questions/177138/how-do-i-test-if-an-item-is-in-a-bash-array)
+
+## Feature 7 - Backup and Delete / Restore
+### Description
+Using the read command, prompt the user to Backup or Restore (use a prompt that tells the user
+what to do)
+If the user selects Backup:
+* Create an empty directory `CS1XA3/Project01/backup` if it doesnt exit
+* Empty the directory `CS1XA3/Project01/backup` if it does exist
+* Find all files that end in the .tmp extension
+ copy them to the `CS1XA3/Project01/backup` directory
+ delete them from their original location
+ create a file `CS1XA3/Project01/backup/restore.log` that contains a list of paths of the
+files original locations
+
+If the user selects Restore:
+* Use the file `CS1XA3/Project01/backup/restore.log` to restore the files to their original location
+* If the file does not exist, through an error message
+
+For the first part, find is used to identify all `.tmp` files and they are moved from the current location and moved to the backup directory, while the file path is sent to the restore.log
+For part two, the lines in the code are extracted for their file and file paths seperately, and then moved out of the backup directory accordingly.
+
+### Execution
+
+This feature can be executed by entering `6` when prompted to do so. The command list will also
+remind you of this.
+
+### Pitfall
+
+If the files have the same name but are in different directories, only one is backed up
+
+### References
+[How to use the basename command in bash](https://stackoverflow.com/questions/9011233/for-files-in-directory-only-echo-filename-no-path)
+[Recursing through a file line by line](https://www.shellhacks.com/bash-read-file-line-by-line-while-read-line-loop/)
+
+## Feature 8 - Switch to Executable
+### Description
+Find all shell scripts (i.e ending in .sh) in the repo
+* Create a file `CS1XA3/Project01/permissions.log` if it doesnt already exist
+* Using the read command, prompt the user to Change or Restore (use a prompt that tells the user
+what to do)
+* If the user selects Change:
+ For each shell script, change the permissions so that only people who have write permissions
+also have executable permissions (i.e if only user has write permissions, then only user has
+executable permissions)
+ Store a log of the file and its original permissions in `CS1XA3/Project01/permissions.log`
+(overwrite it if it already exists)
+* If the user selects Restore
+ Restore each file to its original permissions (as specified in `CS1XA3/Project01/permissions.log`)
+
+Using the `stat -c %a` command, I extract the three digit number corresponding to the permissions for each user and extract them seperately and have a case corresponding to each possibility.
+The name of the file and its three digit number are also stored. For part 2, the file path and the permissions are extracted seperately using the cut command and changes the permissions accordingly.
+
+### Execution
+
+This feature can be executed by entering `7` when prompted to do so. The command list will also
+remind you of this.
+
+### References
+[Extracting specific parts of a string](https://stackoverflow.com/questions/10520623/how-to-split-one-string-into-multiple-variables-in-bash-shell)
+[Obtaining the permission bits for a file](https://unix.stackexchange.com/questions/97644/how-to-inspect-group-permissions-of-a-file)
