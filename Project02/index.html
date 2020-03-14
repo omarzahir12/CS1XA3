@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<title>Omar Zahir Portfolio</title>
+<script src="https://kit.fontawesome.com/db0c0d3862.js" crossorigin="anonymous"></script>
+<script
+src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+</script>
+<script src="code.js"></script>
+<meta charset="UTF-8">
+<!-- References to my stylesheet -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="styles.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css">
+
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+</style>
+
+<body id="back" class="w3-eclipse">
+
+<!-- Page Container -->
+<header  class="w3-container w3-black w3-center w3-xlarge w3-padding-large">
+  <b>
+    <p align="left" style="float:left">
+      <u>Omar Zahir's Portfolio</u>
+      <!-- Time button -->
+      <button style="width:200px;height:50px;margin-left:700px;" class="w3-xlarge nobord w3-hover-eclipse w3-soybean" id="time_button">What Time is it?</button>
+      <p style="padding:5px; float:left" id="t-disp" class="w3-xlarge w3-medium w3-text-black box"></p>
+    </p>
+  </b>
+  <div>
+
+    <!-- Color Theme Buttons -->
+    <button style="width:20px;height:20px;margin-left:1200px;float:left;" class="nobord w3-hover-soybean w3-eclipse" id="soybean_eclipse"></button>
+    <button class="pointer nobord w3-hover-midnight w3-mint" id="mint_midnight"></button>
+    <button class="pointer nobord w3-hover-inca w3-sage" id="inca_sage"></button>
+    <button class="pointer nobord w3-hover-mellow w3-fire" id="mellow_fire"></button>
+    <button class="pointer nobord w3-hover-princess w3-aspen" id="princess_aspen"></button>
+  </div>
+</header>
+
+
+<div class="w3-content w3-margin-top" style="max-width:1400px;">  
+  <!-- The Grid -->
+  <div class="w3-row-padding">
+    <div class="w3-col">
+      <div style="border-radius:1.75%;" class="zoom cardb w3-container w3-card w3-soybean w3-margin-bottom">
+        <h2 class="w3-text-grey w3-padding-16"><i class="fas fa-user fa-fw w3-margin-right w3-xxlarge w3-text-black"></i><b class="w3-text-black">Welcome To My Website!</b></h2>
+      </div>
+    </div>
+    <!-- Left Column -->
+    <div class="w3-third">
+      <img  style="margin-left:45px;width:300px;height:350px;" class ="round-pic" src="pp.jpg">
+      <br>
+      <br>  
+        <div style="border-radius:2%;" class="zoom w3-animate-zoom-card card w3-soybean w3-text-grey w3-card-4">
+        <div class="w3-container">
+          <b class="w3-text-black">
+          <br>
+          <!-- About Me -->
+          My name is Omar Zahir. I'm very passionate about my goals and career, looking for opportunities. 
+          <hr>
+          <b class="w3-text-black">
+            <p><i class="fas fa-user-graduate fa-fw w3-margin-right w3-large w3-text-black"></i>Student</p>
+            <p><i class="fa fa-home w3-margin-right w3-xlarge w3-text-brick"></i>Mississauga, Ontario</p>
+            <p><i class="fas fa-at fa-fw w3-margin-right w3-large w3-text-red"></i>omarzahir12@gmail.com</p>
+            <p><i class="fas fa-phone fa-rotate-90 fa-fw w3-margin-right w3-large w3-text-green"></i>647-646-6259</p>
+            
+        </div>
+        <br>
+      </div>
+      <br>
+      
+      <!-- Skills Section-->
+
+      <div style="border-radius:2.5%;" class="zoom card w3-soybean w3-text-grey w3-card-4">
+        <div class="w3-container">
+          <b class="w3-text-black">
+          <p class="w3-large"><b><i class="fas fa-pen-fancy fa-fw w3-margin-right w3-text-gold"></i>Skills</b></p> 
+          <p><i class="fas fa-users fa-fw w3-margin-right w3-large w3-text-black"></i>Leadership</p>
+          <p><i class="fas fa-handshake fa-fw w3-margin-right w3-large w3-text-black"></i>Collaboration</p>
+          <p><i class="fas fa-hard-hat fa-fw w3-margin-right w3-large w3-text-black"></i>Hard Working</p>
+        </div>
+        <br>
+      </div>
+      <br>
+
+      <div id ="bb" style="border-radius:2.5%;" class="zoom card w3-soybean w3-text-grey w3-card-4">
+        <div class="w3-container">
+          <!-- Various Promgramming Language Skill Bars -->
+          <p class="w3-large w3-text-black"><b><i class="fas fa-laptop-code fa-fw fa-lg w3-margin-right w3-text-"></i>Programming Languages</b></p>
+          
+          <p><i class="fab fa-python fa-fw w3-margin-right w3-large w3-text-green"></i>Python</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div  id = "py" class="w3-container w3-center w3-round-xlarge w3-eclipse" style="width:12%">
+              <div class="w3-center w3-text-white">90%</div>
+            </div>
+          </div>
+          
+          <p><i class="fab fa-java fa-fw w3-margin-right w3-large w3-text-red"></i>Java</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div id = "jv" class="w3-container w3-center w3-round-xlarge w3-eclipse" style="width:12%">
+              <div class="w3-center w3-text-white">80%</div>
+            </div>
+          </div>
+
+          <p>
+            <i class="fab fa-html5 fa-fw w3-margin-right w3-large w3-text-blue"></i>HTML    
+            <i class="fab fa-css3-alt fa-fw w3-margin-right w3-large w3-text-deep-orange"></i>CSS
+            <i class="fab fa-js-square fa-fw w3-margin-right w3-large w3-text-brick"></i>JavaScript
+          </p>
+
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div id = "web" class="w3-container w3-center w3-round-xlarge w3-eclipse" style="width:12%">
+              <div class="w3-center w3-text-white">70%</div>
+            </div>
+          </div>
+
+          <p><i class="fas fa-code fa-fw w3-margin-right w3-large w3-text-deep-purple"></i>Haskell</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div id = "hk" class="w3-container w3-center w3-round-xlarge w3-eclipse" style="width:12%">
+              <div class="w3-center w3-text-white">80%</div>
+            </div>
+          </div>
+          
+          <p><i class="fas fa-terminal fa-fw w3-margin-right w3-large w3-text-indigo"></i>Shell</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div id = "sh" class="w3-container w3-center w3-round-xlarge w3-eclipse" style="width:12%">
+              <div class="w3-center w3-text-white">80%</div>
+            </div>
+          </div>
+          <br>
+          </b>
+        </div>
+      </div><br>
+
+      <!-- Languages Section -->
+
+      <div style="border-radius:2.5%;" class="zoom card w3-soybean w3-text-grey w3-card-4">
+        <div class="w3-container">
+          <b class="w3-text-black">
+          <p class="w3-large w3-text-theme"><b><i class="fas fa-language fa-fw w3-margin-right w3-text-brick"></i>Languages</b></p>
+          <ul type="none">
+            <li>Urdu</li>
+            <li>English</li>
+          </ul>
+        </div>
+        <br>
+      </div>
+      <br>
+
+
+      <!-- Awards Section -->
+
+      <div style="border-radius:2.5%;" class="zoom card w3-soybean w3-text-grey w3-card-4">
+        <div class="w3-container">
+          <b class="w3-text-black">
+          <p class="w3-large w3-text-theme"><b><i class="fas fa-award fa-fw w3-margin-right w3-text-gold"></i>Awards</b></p>
+          <ul type="none">
+            <li>Principal's List Award</li>
+            <li>Valedictorian Award</li>
+            <li>Governor General's Award</li>
+            <li>Citizenship Award</li>
+          </ul>
+        </div>
+      </div>
+      <br>
+
+    <!-- End Left Column -->
+    </div>
+
+    <!-- Right Column -->
+    
+    <div class="w3-twothird">
+
+      <div class="zoom cardrb w3-container round-edge w3-card w3-soybean w3-margin-bottom">
+        <h2 class="w3-text-grey w3-padding-16"><i class="fas fa-briefcase fa-fw w3-margin-right w3-xxlarge w3-text-black"></i><b class="w3-text-black">Work Experience</b></h2>
+        
+        <!-- Work Expereince -->
+
+        <div class="w3-container">
+          <h4 class="w3-text-blue-grey"><b>Order Fulfillment Coordinator Assistant</b></h4>
+          <h5 class="w3-opacity w3-text-blue-grey"><b>- BlossomPure Organic</b></h5>
+          <h6 class="w3-text-blue-grey"><i class="fas w3-text-brick fa-calendar fa-fw w3-margin-right"></i>Jun 2019 - Aug 2019</h6>
+          <ul type ="circle">
+            <li>Organized and managed daily orders of meat food varieties</li>
+            <li>Planned and fulfilled orders received daily</li>
+            <li>Assisted with customer service and daily facility maintenance</li>
+          </ul>
+        </div>
+
+        <hr>
+        
+        <div class="w3-container">
+          <h4 class="w3-text-blue-grey"><b>Computer Technology Instructor/Event Coordinator Assistant</b></h4>
+          <h5 class="w3-opacity w3-text-blue-grey"><b>- Pak Pioneers Organization</b></h5>
+          <h6 class="w3-text-blue-grey"><i class="fas w3-text-brick fa-calendar fa-fw w3-margin-right"></i>Jun 2019 - Aug 2019</h6>
+          <ul type ="circle">
+            <li>Developed a technology literacy curriculum and manual</li>
+            <li>Planned, designed and organized various events market and advertising materials</li>
+            <li>Taught Seniors basic computer literacy skills on a 1-1 basis</li>
+            <li>Developed innovative and effective methods for improving the organizations ongoing activities</li>
+          </ul>
+        </div>
+        <br>
+      </div>
+
+      <!-- Volunteer Experince -->
+
+      <div class="zoom cardrb w3-container round-edge w3-card w3-soybean w3-margin-bottom">
+        <h2 class="w3-text-grey w3-padding-16"><i class="fas fa-user-friends fa-fw w3-margin-right w3-xxlarge w3-text-black"></i><b class="w3-text-black">Volunteer Experience</b></h2>
+
+        <div class="w3-container">
+          <h4 class="w3-text-blue-grey"><b>International Language Instructor</b></h4>
+          <h5 class="w3-opacity w3-text-blue-grey"><b>- Peel District School Board</b></h5>
+          <h6 class="w3-text-blue-grey"><i class="fas fa-calendar fa-fw w3-margin-right w3-text-brick"></i>Sept 2018 - Jun 2019 <!--<span class="w3-tag w3-red w3-round w3-hover-blue">Current</span>--></h6>
+          <ul type ="circle">
+            <li>Facilitated children with daily engaging activities</li>
+            <li>Successfully assisted with managerial administration</li>
+          </ul>  
+        </div>
+
+        <hr>
+
+        <div class="w3-container">
+          <h4 class="w3-text-blue-grey"><b>Seniors Event's Assistant</b></h4>
+          <h5 class="w3-opacity w3-text-blue-grey"><b>- Pak Pioneers Organization</b></h5>
+          <h6 class="w3-text-blue-grey"><i class="fas w3-text-brick fa-calendar fa-fw w3-margin-right"></i>Oct 2016 - Jun 2019</h6>
+          <ul type ="circle">
+            <li>Assisted Seniors with common day-today-tasks</li>
+            <li>Taught Seniors basic computer literacy skills on a 1-1 basis</li>
+            </ul>
+        </div>
+        <br>
+      </div>
+      
+      <!-- Education Section -->
+
+      <div class="zoom cardrb w3-container round-edge w3-card w3-soybean w3-margin-bottom">
+        <h2 class="w3-text-grey w3-padding-16"><i class="fas fa-graduation-cap w3-margin-right w3-xxlarge w3-text-black"></i><b class="w3-text-black">Education</b></h2>
+        
+        <div class="w3-container">
+          <h4 class="w3-text-blue-grey"><b>McMaster University</b></h4>
+          <h6 class="w3-text-blue-grey"><i class="fas w3-text-brick fa-calendar fa-fw w3-margin-right"></i>Sept 2019 - Present</h6>
+          <p>Studying Computer Science</p>
+          <hr>
+        </div>
+        
+        <div class="w3-container">
+          <h4 class="w3-text-blue-grey"><b>Al-Risala Academy</b></h4>
+          <h6 class="w3-text-blue-grey"><i class="fas w3-text-brick fa-calendar fa-fw w3-margin-right"></i>Oct 2016 - Jun 2019</h6>
+          <p>Obtained Highschool Diploma</p><br>
+        </div>
+      </div>
+
+    <!-- End Right Column -->
+    </div>
+    
+  <!-- End Grid -->
+  </div>
+  
+  <!-- End Page Container -->
+</div>
+
+<!-- Social Media Links -->
+
+<footer class="w3-container w3-black w3-center w3-margin-top w3-xlarge w3-padding-large">
+  <p>Find me on social media!</p>
+  <a href="https://www.facebook.com"><i class="zoom fab fa-facebook w3-hover-opacity w3-xxxlarge w3-padding-small" style="color:rgb(57, 123, 223);"></i></a>
+  <a href="https://www.instagram.com/omar.zahir.12/?hl=en"><i class="zoom fab fa-instagram w3-hover-opacity w3-xxxlarge w3-padding-small" style="color:rgb(204, 97, 113);"></i></a>
+  <a href="linkedin.com/in/omarzahir"><i class="zoom fab fa-snapchat w3-hover-opacity w3-xxxlarge w3-padding-small" style="color:yellow;"></i></a>
+  <a href="https://twitter.com/omarzahir12"><i class="zoom fab fa-twitter w3-hover-opacity w3-xxxlarge w3-padding-small" style="color:rgb(79, 194, 230);"></i></a>
+  <a href="https://linkedin.com/in/omarzahir"><i class="zoom fab fa-linkedin w3-hover-opacity w3-xxxlarge w3-padding-small" style="color:rgb(38, 93, 165);"></i></a>
+  <a href="https://github.com/omarzahir12"><i class="zoom fab fa-github w3-hover-opacity w3-xxxlarge w3-padding-small" style="color:rgb(15, 219, 107);"></i></a>
+  <br>
+  <b>
+    
+    <!-- Online Button -->
+
+    <p align="left" style="float:left">
+      <button style="width:200px;height:50px;margin-left:70px;" class="pointer nobord w3-hover-eclipse w3-soybean" id="offline">Are You Online?</button>
+      <p style="padding:3px; float:left" id="off" class="w3-xlarge w3-text-black box"></p>
+      <button style="width:300px;height:50px;margin-left:650px;" class="pointer nobord w3-hover-eclipse w3-soybean" id="resume" onclick="Resume()">View My Resume!</button>
+    </p>
+  </b>
+  <br>
+  <br>
+</footer>
+
+</body>
+</html>
