@@ -27,4 +27,8 @@ urlpatterns = [
     path('moreppl/', views.more_ppl_view,name='more_ppl_view'),
     path('friendrequest/', views.friend_request_view,name='friend_request_view'),
     path('acceptdecline/', views.accept_decline_view,name='accept_decline_view'),
+    path('change/', views.password_change_view, name="change_view"),
+    # path('accountchange/', views.account_view, name="account_change_view"),
+    path('changeinfo/', views.user_change_view, name="user_change_view"),
 ]
+

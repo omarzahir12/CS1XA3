@@ -66,6 +66,30 @@ function acceptDeclineRequest(event) {
    | Document Ready (Only Execute After Document Has Been Loaded)
    ********************************************************************************************
    */
+
+function acceptResponse(data,status) {
+    if (status == 'success') {
+        // reload page to update like count
+        location.reload();
+    }
+    else {
+        alert('failed to accept/decline friend request ' + status);
+    }
+}
+
+function acceptDeclineRequest(event) {
+    // the id of the current button, should be fr-name where name is valid username
+    let frID = this.id;
+    let json_data = { 'frID' : frID };
+    // globally defined in messages.djhtml using i{% url 'social:like_view' %}
+    let url_path = accept_decline_url;
+
+    // AJAX post
+    $.post(url_path,
+           json_data,
+           acceptResponse);
+}
+
 $(document).ready(function() {
     // handle requesting more ppl
     $('#more-ppl-button').click(submitMorePpl);
@@ -73,4 +97,6 @@ $(document).ready(function() {
     $('.fr-button').click(friendRequest);
     // handle for accepting/declining a friend request
     $('.acceptdecline-button').click(acceptDeclineRequest);
+    //$('#A-USERNAME').click(acceptRequest);
+    //$('#D-USERNAME').click(declineRequest);
 });

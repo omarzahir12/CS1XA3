@@ -16,8 +16,8 @@ class UserInfo(models.Model):
                                 on_delete=models.CASCADE,
                                 primary_key=True)
     objects = UserInfoManager()
-    employment = models.CharField(max_length=30,default='Unspecified')
-    location = models.CharField(max_length=50,default='Unspecified')
+    employment = models.CharField(null=True,max_length=30,default='Unspecified')
+    location = models.CharField(null=True,max_length=50,default='Unspecified')
     birthday = models.DateField(null=True,blank=True)
     interests = models.ManyToManyField(Interest)
     friends = models.ManyToManyField('self')

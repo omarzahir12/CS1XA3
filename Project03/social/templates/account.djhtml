@@ -9,6 +9,11 @@
                 <div class="w3-container w3-padding">
                     <h6 class="w3-opacity">Change Password</h6>
                     <!--                     TODO Objective 3: Add Password Change Form -->
+                    <form method="post" id="change_form" action="{% url 'social:change_view' %}">
+                        {% csrf_token %}
+                        {{ change_form }}
+                        <input type="submit" value="Submit" />
+                    </form>
                 </div>
             </div>
         </div>
@@ -18,7 +23,12 @@
             <div class="w3-card w3-round w3-white">
                 <div class="w3-container w3-padding">
                     <h6 class="w3-opacity">Update Info</h6>
-                    <!--                     TODO Objective 3: Add User Info Update Forms -->
+                    <!-- TODO Objective 3: Add User Info Update Forms -->
+                    <form method="post" id="change_userinfo_form" action="{% url 'social:user_change_view' %}">
+                        {% csrf_token %}
+                        {{ change_userinfo_form }}
+                        <input type="submit" value="Submit" />
+                    </form>
                 </div>
             </div>
         </div>
